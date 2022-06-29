@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gateway/boot-camp-gateway.iml" filepath="$PROJECT_DIR$/gateway/boot-camp-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notification/notification.iml" filepath="$PROJECT_DIR$/notification/notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/order-example.iml" filepath="$PROJECT_DIR$/.idea/order-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderManagement/orderManagement.iml" filepath="$PROJECT_DIR$/orderManagement/orderManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderSnack/orderSnack.iml" filepath="$PROJECT_DIR$/orderSnack/orderSnack.iml" />
+    </modules>
+  </component>
+</project>
