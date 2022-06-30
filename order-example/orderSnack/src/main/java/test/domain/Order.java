@@ -24,6 +24,7 @@ public class Order {
     @PrePersist
     public void onPrePersist() {
         Ordered ordered = new Ordered(this);
+        ordered.setId(customerId);
         ordered.publishAfterCommit();
 
 //        OrderCanceled orderCanceled = new OrderCanceled(this);

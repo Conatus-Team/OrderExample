@@ -20,7 +20,11 @@ public class PolicyHandler {
     OrderRepository orderRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
-    public void whatever(@Payload String eventString) {}
+    public void whatever(@Payload String eventString) {
+        System.out.println(
+                "\n\n##### StreamListener whatever : " + eventString + "\n\n"
+        );
+    }
     // keep
 
 }

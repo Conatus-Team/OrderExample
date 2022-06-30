@@ -67,3 +67,11 @@ spring:
           contentType: application/json
 
 
+kafka:
+  bootstrap:
+    address: http://localhost:9092
+  topic: eventTopic
+  consumer:
+    groupId: eventTopic-orderManagement
+  event:
+    location: com.example.eventTopic.kafka.event
