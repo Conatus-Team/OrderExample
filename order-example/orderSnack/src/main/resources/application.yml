@@ -115,6 +115,6 @@ api:
 #    address: http://localhost:9092
 #  topic: eventTopic
 #  consumer:
-#    groupId: orderSnack
+#    groupId: eventTopic-order
 #  event:
 #      location: com.example.eventTopic.kafka.event
