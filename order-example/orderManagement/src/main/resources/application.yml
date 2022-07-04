@@ -6,10 +6,18 @@ server:
 spring:
   profiles: default
   jpa:
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
         show_sql: true
         format_sql: true
+    database: mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/snack?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: Sweetime010!
+    driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     stream:
       kafka:
@@ -67,11 +75,11 @@ spring:
           contentType: application/json
 
 
-kafka:
-  bootstrap:
-    address: http://localhost:9092
-  topic: eventTopic
-  consumer:
-    groupId: eventTopic-orderManagement
-  event:
-    location: com.example.eventTopic.kafka.event
+#kafka:
+#  bootstrap:
+#    address: http://localhost:9092
+#  topic: eventTopic
+#  consumer:
+#    groupId: eventTopic-orderManagement
+#  event:
+#    location: com.example.eventTopic.kafka.event
